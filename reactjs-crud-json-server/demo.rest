@@ -1,0 +1,29 @@
+
+GET http://127.0.0.1:3000/products HTTP/1.1
+Content-Type: application/json
+
+GET http://127.0.0.1:3000/products/2 HTTP/1.1
+Content-Type: application/json
+
+
+POST http://127.0.0.1:3000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "5",
+    "nama": "asd",
+    "deskripsi": "asd Orange World!!!",
+    "imageURL": "htasdtps://images.unsplash.com/photo-1621135802920-133df287f89c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4NjA0MjYyNw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"    
+}
+
+PUT http://127.0.0.1:3000/products/5 HTTP/1.1
+Content-Type: application/json
+
+{    
+    "nama": "white",
+    "deskripsi": "apah ea",
+    "imageURL": "huehuehue"
+}
+
+DELETE http://127.0.0.1:3000/products/5 HTTP/1.1
+Content-Type: application/json
